@@ -33,13 +33,16 @@ export const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="mt-16 relative animate-float">
-          <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
-          <img
-            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-            alt="RightClickPrompt AI in action"
-            className="rounded-2xl shadow-2xl mx-auto max-w-4xl w-full"
-          />
+        <div className="mt-16 relative">
+          <div className="relative aspect-video max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden">
+            <iframe
+              src="https://www.youtube.com/embed/5dZgSqpP9jM"
+              title="RightClickPrompt AI Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
+          </div>
         </div>
       </div>
     </section>
