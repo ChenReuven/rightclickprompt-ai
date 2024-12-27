@@ -23,7 +23,7 @@ export const Header = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Chrome className="w-8 h-8 text-primary" />
-          <span className="text-xl font-semibold">RightClickPrompt AI - Test</span>
+          <span className="text-xl font-semibold">RightClickPrompt AI</span>
         </div>
         <Button
           className="bg-primary hover:bg-primary/90 text-white flex items-center space-x-2"
