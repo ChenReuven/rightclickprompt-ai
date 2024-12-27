@@ -1,4 +1,4 @@
-import { Github, Twitter, Mail } from "lucide-react";
+import { Github, Twitter, Mail, Youtube } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -47,11 +47,29 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Connect</h4>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="h-8 w-8">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="h-8 w-8"
+                onClick={() => window.open("https://github.com/ChenReuven/", "_blank")}
+              >
                 <Github className="h-4 w-4" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="h-8 w-8"
+                onClick={() => window.open("https://x.com/ChenRvn", "_blank")}
+              >
                 <Twitter className="h-4 w-4" />
+              </Button>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="h-8 w-8"
+                onClick={() => window.open("https://www.youtube.com/@chenrvn", "_blank")}
+              >
+                <Youtube className="h-4 w-4" />
               </Button>
               <Button 
                 variant="ghost" 
