@@ -85,7 +85,7 @@ export const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} RightClickPrompt AI. All rights reserved.
+            © {new Date().getFullYear()} Akita Labs AI. All rights reserved.
           </p>
         </div>
       </div>
