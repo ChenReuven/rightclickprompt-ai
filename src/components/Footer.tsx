@@ -1,7 +1,13 @@
-import { Github, Twitter, Mail, Link } from "lucide-react";
+import { Github, Twitter, Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link as RouterLink } from "react-router-dom";
 
 export const Footer = () => {
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = "mailto:chen.rvn@gmail.com";
+  };
+
   return (
     <footer className="bg-primary/5 py-12 mt-20">
       <div className="container">
@@ -17,10 +23,14 @@ export const Footer = () => {
             <h4 className="font-semibold">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Button variant="link" className="h-auto p-0">Privacy Policy</Button>
+                <RouterLink to="/privacy">
+                  <Button variant="link" className="h-auto p-0">Privacy Policy</Button>
+                </RouterLink>
               </li>
               <li>
-                <Button variant="link" className="h-auto p-0">Terms of Service</Button>
+                <RouterLink to="/terms">
+                  <Button variant="link" className="h-auto p-0">Terms of Service</Button>
+                </RouterLink>
               </li>
             </ul>
           </div>
@@ -29,10 +39,7 @@ export const Footer = () => {
             <h4 className="font-semibold">Support</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Button variant="link" className="h-auto p-0">Help Center</Button>
-              </li>
-              <li>
-                <Button variant="link" className="h-auto p-0">Contact Us</Button>
+                <Button variant="link" className="h-auto p-0" onClick={handleContactClick}>Contact Us</Button>
               </li>
             </ul>
           </div>
@@ -46,7 +53,12 @@ export const Footer = () => {
               <Button variant="ghost" size="icon" className="h-8 w-8">
                 <Twitter className="h-4 w-4" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="h-8 w-8"
+                onClick={handleContactClick}
+              >
                 <Mail className="h-4 w-4" />
               </Button>
             </div>
