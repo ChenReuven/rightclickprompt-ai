@@ -9,7 +9,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Michael Chen",
+    name: "Maor Hadad",
     role: "Developer",
     text: "This extension saves me hours of work. The AI suggestions are spot-on and the interface is seamless.",
     rating: 5,
