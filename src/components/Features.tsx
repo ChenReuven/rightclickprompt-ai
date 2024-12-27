@@ -1,15 +1,15 @@
-import { Sparkles, Brain, Zap, Globe } from "lucide-react";
+import { Video, FileText, Zap, Globe } from "lucide-react";
 
 const features = [
   {
-    icon: Sparkles,
-    title: "Smart Suggestions",
-    description: "Get intelligent suggestions based on your selected text and context.",
+    icon: Video,
+    title: "Youtube Summarization",
+    description: "Get quick summaries of YouTube videos without watching them entirely.",
   },
   {
-    icon: Brain,
-    title: "AI-Powered Analysis",
-    description: "Advanced AI algorithms analyze content to provide relevant insights instantly.",
+    icon: FileText,
+    title: "AI-Powered Summarization",
+    description: "Advanced AI algorithms summarize content to provide concise insights instantly.",
   },
   {
     icon: Zap,
