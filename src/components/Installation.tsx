@@ -1,21 +1,21 @@
-import { Download, Chrome, Check } from "lucide-react";
+import { Download, MousePointerClick, Sparkles } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 const steps = [
   {
-    title: "Visit Chrome Web Store",
-    description: "Find RightClickPrompt AI on the Chrome Web Store",
-    icon: Chrome,
-  },
-  {
     title: "Add to Chrome",
-    description: "Click the 'Add to Chrome' button to install",
+    description: "Install RightClickPrompt AI from the Chrome Web Store with just one click",
     icon: Download,
   },
   {
-    title: "Start Using",
-    description: "Right-click on any text field to access AI-powered suggestions",
-    icon: Check,
+    title: "Right Click in any site",
+    description: "Simply right-click on any text or content you want to work with",
+    icon: MousePointerClick,
+  },
+  {
+    title: "Select an option from AI powered",
+    description: "Choose from various AI-powered features to enhance your browsing experience",
+    icon: Sparkles,
   },
 ];
 
