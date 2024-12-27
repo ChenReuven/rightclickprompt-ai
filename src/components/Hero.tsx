@@ -16,7 +16,7 @@ export const Hero = () => {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-white flex items-center space-x-2"
-              onClick={() => window.open("https://chrome.google.com/webstore", "_blank")}
+              onClick={() => window.open("https://chromewebstore.google.com/detail/rightclickprompt/mfpldajbmlikbbagbdgnnmofhhpjccfh", "_blank")}
             >
               <Chrome className="w-5 h-5" />
               <span>Add to Chrome</span>
