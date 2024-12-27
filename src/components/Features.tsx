@@ -1,4 +1,4 @@
-import { Video, FileText, Wand2, Search } from "lucide-react";
+import { Video, FileText, Wand2, Search, Languages } from "lucide-react";
 
 const features = [
   {
@@ -21,6 +21,11 @@ const features = [
     title: "Search In Perplexity",
     description: "Seamlessly search and get AI-powered answers from Perplexity AI.",
   },
+  {
+    icon: Languages,
+    title: "AI Translation",
+    description: "Instantly translate text into multiple languages with high accuracy.",
+  },
 ];
 
 export const Features = () => {
@@ -35,19 +40,19 @@ export const Features = () => {
             Experience the power of AI right at your fingertips with our innovative features.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row gap-4 justify-between items-stretch">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-6 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 transition-all duration-300 hover:shadow-lg"
+              className="group flex-1 p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 transition-all duration-300 hover:shadow-lg"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <feature.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-primary-dark">
+              <h3 className="text-lg font-semibold mb-2 text-primary-dark">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm text-gray-600">
                 {feature.description}
               </p>
             </div>
