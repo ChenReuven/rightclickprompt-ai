@@ -1,4 +1,4 @@
-import { Video, FileText, Wand2, Globe } from "lucide-react";
+import { Video, FileText, Wand2, Search } from "lucide-react";
 
 const features = [
   {
@@ -17,9 +17,9 @@ const features = [
     description: "Instant responses with no delay, keeping your workflow smooth and efficient.",
   },
   {
-    icon: Globe,
-    title: "Works Everywhere",
-    description: "Compatible with all websites and supports multiple languages.",
+    icon: Search,
+    title: "Search In Perplexity",
+    description: "Seamlessly search and get AI-powered answers from Perplexity AI.",
   },
 ];
 
