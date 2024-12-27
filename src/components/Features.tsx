@@ -1,4 +1,4 @@
-import { Video, FileText, Zap, Globe } from "lucide-react";
+import { Video, FileText, Wand2, Globe } from "lucide-react";
 
 const features = [
   {
@@ -12,8 +12,8 @@ const features = [
     description: "Advanced AI algorithms summarize content to provide concise insights instantly.",
   },
   {
-    icon: Zap,
-    title: "Lightning Fast",
+    icon: Wand2,
+    title: "Enhance Prompt",
     description: "Instant responses with no delay, keeping your workflow smooth and efficient.",
   },
   {
